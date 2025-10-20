@@ -1,0 +1,3 @@
+source_video,source_mask,reference_1,reference_2
+./data/source/video2.mp4,./data/mask/mask2.png,./data/reference/character2.png,./data/reference/character2-face.png
+./data/source/video1.mp4,./data/mask/mask1.png,./data/reference/character1.png,./data/reference/character1-face.png
