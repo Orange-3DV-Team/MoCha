@@ -1,0 +1,415 @@
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+.background-img {
+  background-image: url('https://i.imgur.com/s08MkXC.jpg');
+}
+.foreground-img {
+  background-image: url('https://i.imgur.com/PfIWek4.jpg');
+  width: 50%;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.gifImage:hover {
+  opacity: 0.5;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+.teaser .body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Jost', sans-serif;
+}
+
+.navbar-inner {
+  height: 280px;
+}
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+@font-face {
+font-family: 'MyFont';
+src: url('../fonts/mocha.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
+
+.publication-title {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+.publication-maintitle {
+  font-family: 'MyFont', 'Jost', sans-serif;
+  font-weight: 600;
+  font-synthesis: weight;
+}
+
+.publication-authors {
+  font-family: 'Jost', sans-serif;
+}
+
+.publication-venue {
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.publication-awards {
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.affiliation-logo {
+  display: inline-block;
+  width: 20%;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+.texture-item img {
+  width: 80%; /* 设置图片宽度为原来的80% */
+  height: auto; /* 高度自动，保持图片比例 */
+  display: block; /* 使图片成为块级元素 */
+  margin: auto; /* 左右自动填充，使图片居中 */
+  visibility: visible; /* 确保图片可见 */
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+.harmonization {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bal-container-small {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.bal-container-big {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.bal-after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bal-before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 50;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.bal-before-inset {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bal-after img,
+.bal-before img {
+  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bal-beforePosition {
+  background: #121212;
+  color: #fff;
+  left: 0;
+  pointer-events: none;
+  border-radius: 0.2rem;
+  /* padding: 2px 10px; */
+}
+
+.bal-afterPosition {
+  background: #121212;
+  color: #fff;
+  right: 0;
+  pointer-events: none;
+  border-radius: 0.2rem;
+  /* padding: 2px 10px; */
+}
+
+.beforeLabel {
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.afterLabel {
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bal-handle {
+  height: 41px;
+  width: 41px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -21px;
+  border: 2px solid #fff;
+  border-radius: 1000px;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+.handle-left-arrow,
+.handle-right-arrow {
+  width: 0;
+  height: 0;
+  border: 6px inset transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.handle-left-arrow {
+  border-right: 6px solid #fff;
+  left: 50%;
+  margin-left: -17px;
+}
+
+.handle-right-arrow {
+  border-left: 6px solid #fff;
+  right: 50%;
+  margin-right: -17px;
+}
+
+.bal-handle::before {
+  bottom: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+.bal-handle::after {
+  top: 50%;
+  margin-top: 20.5px;
+  box-shadow: 0 0 5px rgb(12, 12, 12);
+}
+
+.bal-handle::before,
+.bal-handle::after {
+  content: ' ';
+  display: block;
+  width: 2px;
+  background: #fff;
+  height: 9999px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.section {
+  width: 100%;
+}
+
+/* Add this CSS */
+.unified-video-carousel {
+    /* Ensure the carousel doesn't spill out of its container */
+    overflow: hidden; 
+    /* Force maximum width to match the main content container */
+    max-width: 100%; /* Adjust this value if 'is-max-desktop' changes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unified-video-carousel .item {
+    /* Set a specific, contained width for each slide item */
+    width: 100%; 
+    height: 100%; 
+    /* Ensure no extra padding/margin is causing spillover */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+    /* 关键：设置黑色背景 */
+    background-color: #000000; /* <--- 关键：黑色背景 */
+}
+
+
+.unified-video-carousel .carousel-container,
+
+/* 3. 确保视频元素本身没有额外的边距或定位干扰 */
+.unified-video-carousel video {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; /* <--- 关键：确保内容居中且不被裁切 */
+    
+    /* 覆盖你旧代码中的不必要或冲突的属性 */
+    width: auto;   /* 让视频根据 max-width/max-height 和 object-fit 决定自身尺寸 */
+    height: auto;
+    vertical-align: middle;
+    display: block;
+}

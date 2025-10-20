@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="MoCha">
+    <meta property="og:title" content="MoCha"/>
+    <meta property="og:description"
+          content="MoCha: End-to-End Video Character Replacement without Structural Guidance"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/mocha.png"/>
+    <meta property="og:image:width" content="2412"/>
+    <meta property="og:image:height" content="1394"/>
+
+
+    <meta name="twitter:title" content="MoCha">
+    <meta name="twitter:description"
+          content="MoCha: End-to-End Video Character Replacement without Structural Guidance">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/mocha.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Video-to-Video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>MoCha</title>
+    <link rel="icon" type="image/x-icon" href="static/images/mocha.png">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+            <a class="navbar-item">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More Research
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        coming soon
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+
+                    <h1 class="title is-1 publication-maintitle scroll-animate">MoCha</h1>
+
+                    <div class="is-size-3 publication-maintitle scroll-animate">
+                        End-to-End Video Character Replacement without Structural Guidance
+                    </div>
+
+                    <div class="is-size-5 publication-authors scroll-animate">
+                        <span class="author-block" style="font-size: 1.3em;">Orange Team</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links scroll-animate">
+                            <span class="link-block">
+                                <a href="" target="_blank"
+                                   class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                </a>
+                            </span>
+                            <span class="link-block">
+                                <a href="" target="_blank"
+                                   class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>GitHub</span>
+                                </a>
+                            </span>
+                            <span class="link-block">
+                                <a href="" target="_blank"
+                                   class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        🤗
+                                    </span>
+                                    <span>HF Model</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                    <video controls muted autoplay loop><source src="content/long_video/video1.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+        <div class="column">
+                <div class="content has-text-justified" style="font-size: 1.2em;">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                    <video controls muted autoplay loop><source src="content/long_video/video2.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <div class="content has-text-justified" style="font-size: 1.2em; text-align: center;">
+                    <p>
+                        MoCha performs high-quality character replacement from the source video, ensuring strong consistency in lighting, animation, facial expression, and character identity in the output.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Teaser video-->
+<!-- <section class="section">
+    <div class="container is-max-desktop">
+
+
+        <div class="columns is-multiline is-centered">
+            <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+                <video class="video-player" poster="" id="tree2" controls style="width: 60%; height: auto;">
+                    <source src="content/aa/角色合集_带原型.mp4" type="video/mp4">
+                </video>
+                <p class="caption" style="width: 60%; text-align: center;">
+                    Wan-Animate can animate any character based on a performer's video, precisely replicating the performer's facial expressions and movements to generate highly realistic character videos.
+                </p>
+            </div>
+        </div>
+
+        <div class="columns is-multiline is-centered">
+            <div class="column">
+                <video class="video-player" poster="" id="tree2" controls>
+                    <source src="content/aa/rep_shots.mp4" type="video/mp4">
+                </video>
+                <p class="caption">
+                    Wan-Animate can replace characters in a video with animated characters, preserving their expressions and movements while also replicating the original lighting and color tone for seamless environmental integration."
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</section> -->
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+
+                <div class="content has-text-justified">
+                    <p style="font-size: 1.2em;">
+                        Controllable video character replacement remains a challenging problem due to the lack of qualified paired-video data. Prior works have predominantly adopted a reconstruction-based paradigm reliant on per-frame mask and explicit structural guidance (e.g., pose, depth). This reliance, however, renders them fragile in complex scenarios involving occlusions, rare poses, character-object interactions, or complex illumination, often resulting in visual artifacts and temporal discontinuities.
+In this paper, we propose MoCha, a novel framework that bypasses these limitations, which requires only a single first-frame mask and re-render the character by unifying different conditions into a single token stream. To overcome the scarcity of qualified paired-training data, we construct a comprehensive data synthesis pipeline. Specifically, we construct two specialized datasets: a motion-paired dataset using the Unreal Engine 5 (UE5), and an expression-paired dataset synthesized via state-of-the-art portrait animation techniques.
+Extensive experiments show that our method substantially outperforms existing state-of-the-art approaches. </p></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Method -->
+<section class="section hero is-small">
+
+    <style>
+                .video-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .video-item column {
+                    width: 48%; /* 各占一半，留下一些间隔 */
+                    object-fit: cover; /* 保持图片纵横比 */
+                    margin: 0 10px;
+                }
+
+
+                .item-gif-container {
+                    width: 48%; /* 占据父元素的80%宽度 */
+                    margin: auto; /* 水平方向上创建相同的空白 */
+                }
+            </style>
+
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Getting Started with MoCha</h2>
+            </div>
+            
+        </div>
+        <div class="columns is-centered has-text-centered">
+        <div class="column">
+                <div class="content has-text-justified" style="font-size: 1.3em;">
+                    <p>
+                        To start your own character replacement with MoCha, the following three inputs are required:
+                    </p>
+                    
+                    <ul>
+                        <li><strong>Source Video:</strong> The original video with the character to be replaced.</li>
+                        <li><strong>Designation Mask for the First Frame:</strong> A mask marking the source character to be replaced in the first frame of Source Video.</li>
+                        <li><strong>Reference Images:</strong> Reference Images of the new character for replacement with clean background. We recommend uploading at least one high-quality, front-facing facial close-up.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            
+            <div class="column">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <video controls muted autoplay loop><source src="content/start_MoCha.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Method -->
+
+
+<style>
+    .gifImage:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+
+    .paused {
+        animation-play-state: paused;
+    }
+
+</style>
+
+
+<head>
+    <title>place gif</title>
+    <style>
+        .gif-container {
+            display: flex;
+        }
+
+        .gif {
+            width: 660px; /* 设置 GIF 的宽度 */
+            height: 400px; /* 设置 GIF 的高度 */
+        }
+    </style>
+</head>
+
+
+<section class="section hero is-small is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+            <h2 class="title is-3">Qualitative Performance</h2>
+            </div>
+            <h2 class="content has-text-justified">
+                <p style="font-size: 1.4em;"></p>
+            </h2>
+
+
+            <style>
+                .video-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .video-item column {
+                    width: 48%; /* 各占一半，留下一些间隔 */
+                    object-fit: cover; /* 保持图片纵横比 */
+                    margin: 0 10px;
+                }
+
+
+                .item-gif-container {
+                    width: 48%; /* 占据父元素的80%宽度 */
+                    margin: auto; /* 水平方向上创建相同的空白 */
+                }
+            </style>
+
+            <style>
+                .video-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    /*margin: 0 10px;*/
+                    width: 100%;
+                }
+
+                .description {
+                    font-size: 1.2em;
+                    text-align: justify;
+                }
+
+                .content-description {
+                    margin-top: 10px; /* Add some space above the description */
+                }
+            </style>
+            <style>
+                .caption {
+                    margin-top: 8px; /* Space between the video and its caption */
+                }
+            </style>
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Cartoon Character Replacement</h3>
+            </div>
+
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        MoCha generates high-fidelity videos when conditioned on cartoon character reference images.
+                    </p>
+            </div>
+
+            <div id="video-carousel-3" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video3.mp4" type="video/mp4"></video>
+            </div>
+          </div>
+            
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Real-Person Character Replacement</h3>
+            </div>
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        MoCha also performs well in replacing real-person characters in source videos.
+                    </p>
+            </div>
+
+            <div id="video-carousel-4" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/real_replace/video1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/real_replace/video2.mp4" type="video/mp4"></video>
+            </div>
+          </div>
+
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Scene Illumination Consistency</h3>
+            </div>
+
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        Compared with existing works, MoCha can better preserve the lighting and color tone of the original video, making the character more naturally integrated into the new environment. Furthermore, MoCha can handle complex lighting conditions, such as shaking lights and strong backlighting.
+                    </p>
+            </div>
+
+            <div id="video-carousel" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/scene_illum/video1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/scene_illum/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/scene_illum/video3.mp4" type="video/mp4"></video>
+            </div>
+          </div>
+
+            
+
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Precise Action Preservation</h3>
+            </div>
+
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        MoCha can accurately replicate the actions and expressions of the original video, even in complex scenarios involving fast movements and object interactions. This ensures that the generated character video maintains high fidelity to the source performance.
+                    </p>
+            </div>
+
+            <div id="video-carousel-2" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/anim_align/video1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/anim_align/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/anim_align/video3.mp4" type="video/mp4"></video>
+            </div>
+          </div>
+
+
+            <br></br>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content" style="text-align: center;">
+                    <p>
+                        This project is intended solely for academic research and effect demonstration.
+                    </p>
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                            target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                       target="_blank">Nerfies</a> project
+                        page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="static/js/script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. 获取所有带有 'video-player' 或在轮播内的视频元素
+        const videos = document.querySelectorAll('video');
+
+        const observer = new IntersectionObserver((entries) => {
+            // ... [我的 Intersection Observer 播放/暂停逻辑] ...
+            entries.forEach(entry => {
+                const video = entry.target;
+
+                // 确保视频是静音的（现代浏览器自动播放的前提）
+                if (!video.muted) {
+                    return; 
+                }
+
+                if (entry.isIntersecting) {
+                    // 进入视口
+                    video.play().catch(error => {
+                        console.error("Autoplay failed:", error);
+                    });
+                } else {
+                    // 离开视口
+                    video.pause();
+                }
+            });
+        }, {
+            root: null, 
+            rootMargin: '0px', 
+            threshold: 0.2 // 80% 可见时触发
+        });
+
+        // 2. 观察所有视频
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+    });
+</script>
+
+<script>
+    new BeforeAfter({
+        id: '#example1'
+    });
+    new BeforeAfter({
+        id: '#example2'
+    });
+    new BeforeAfter({
+        id: '#example3'
+    });
+    new BeforeAfter({
+        id: '#example4'
+    });
+    new BeforeAfter({
+        id: '#example6'
+    });
+    new BeforeAfter({
+        id: '#example7'
+    });
+
+</script>
+
+<script>
+    var gifImage = document.getElementById('gifImage');
+    var isPaused = false;
+
+    gifImage.addEventListener('mouseenter', function () {
+        gifImage.src = gifImage.src;
+        isPaused = true;
+    });
+
+    gifImage.addEventListener('mouseleave', function () {
+        if (isPaused) {
+            gifImage.src = gifImage.src;
+            isPaused = false;
+        }
+    });
+</script>
+
+<script>
+
+    const initializeCarouselWithVideoAutoplay = (selector, options) => {
+        // 1. 初始化轮播并获取实例
+        // bulmaCarousel.attach 返回一个包含所有实例的数组
+        const instances = bulmaCarousel.attach(selector, options);
+
+        if (instances && instances.length > 0) {
+            const videoCarousel = instances[0];
+            
+            // 获取当前轮播容器内的所有视频元素
+            const allVideos = videoCarousel.element.querySelectorAll('video');
+
+            // 定义播放和暂停逻辑函数
+            const playCurrentVideo = (index) => {
+                // 暂停所有视频 (确保只有当前视频播放)
+                allVideos.forEach(v => v.pause()); 
+
+                // 播放当前活动幻灯片中的视频
+                // 注意：bulma-carousel的索引是从 1 开始的 (currentItem)，
+                // 但 JavaScript 的数组索引是从 0 开始的。
+                // 我们使用 event.data.currentItem，它返回的是 0-based index.
+                // 之前您使用的 videoCarousel.state.currentItem 可能返回 1-based index，
+                // 但在事件中 event.data.currentItem 是 0-based index. 我们信任 event.data。
+
+                const activeVideo = allVideos[index];
+                if (activeVideo) {
+                    // 尝试播放。捕获错误以避免浏览器对自动播放（带声音）的限制
+                    activeVideo.play().catch(error => {
+                        console.log("Video autoplay prevented by browser (Need user interaction):", error);
+                    });
+                }
+            };
+
+            // ----------------------------------------------------
+            // A. 初始加载时播放第一个视频
+            // ----------------------------------------------------
+            // 当轮播初始化时，第一个视频的索引通常是 0。
+            // 确保 DOM 完全加载后执行，防止 state 未初始化。
+            setTimeout(() => {
+                const initialIndex = videoCarousel.state ? videoCarousel.state.currentItem : 0;
+                playCurrentVideo(initialIndex);
+            }, 500); // 稍微延迟以确保 Bulma Carousel 内部状态已就绪
+
+
+            // ----------------------------------------------------
+            // B. 监听轮播的切换事件
+            // ----------------------------------------------------
+            videoCarousel.on('after:slide', (event) => {
+                // event.data.currentItem 是新的活动项的 0-based 索引
+                const newIndex = event.data.currentItem; 
+                playCurrentVideo(newIndex);
+            });
+
+            // ----------------------------------------------------
+            // C. 暂停轮播自动翻页当用户手动播放视频时 (可选)
+            // ----------------------------------------------------
+            allVideos.forEach(video => {
+                video.addEventListener('play', () => {
+                    // 用户手动点击播放时，停止轮播的自动翻页
+                    // 这样视频播放完之前，轮播不会跳走
+                    videoCarousel.stop(); 
+                });
+                video.addEventListener('ended', () => {
+                    // 视频播放结束时，恢复轮播的自动翻页
+                    videoCarousel.start(); 
+                    // 并且手动切换到下一页
+                    videoCarousel.next();
+                });
+            });
+        }
+    };
+
+    bulmaCarousel.attach('#results-carousel11', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel22', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel44', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: false,
+        autoplay: false,
+    });
+    initializeCarouselWithVideoAutoplay('#video-carousel', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
+        navigation: true, 
+        pagination: true 
+    });
+    initializeCarouselWithVideoAutoplay('#video-carousel-2', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
+        navigation: true, 
+        pagination: true 
+    });
+    initializeCarouselWithVideoAutoplay('#video-carousel-3', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
+        navigation: true, 
+        pagination: true 
+    });
+    initializeCarouselWithVideoAutoplay('#video-carousel-4', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
+        navigation: true, 
+        pagination: true 
+    });
+
+
+</script>
+
+<script>
+    document.getElementById('gifImage3').src = 'content/gifs/Item.gif';
+    document.getElementById('gifImage1').src = 'content/gifs/s1.gif';
+    document.getElementById('gifImage2').src = 'content/gifs/s2.gif';
+
+    // 图片资源路径
+    const images = [
+        'content/teaser/t3.gif',
+        'content/teaser/t4.gif',
+        'content/teaser/t1.gif',
+        'content/teaser/t2.gif'
+    ];
+
+    // 获取要插入图片的div
+    const group1 = document.getElementById('group1');
+    const group2 = document.getElementById('group2');
+
+    // 创建并插入前两张图片
+    for (let i = 0; i < 2; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group1.appendChild(img);
+    }
+
+    // 创建并插入后两张图片
+    for (let i = 2; i < images.length; i++) {
+        const img = document.createElement('img');
+        img.src = images[i];
+        img.loading = 'lazy';
+        img.alt = '图片' + (i + 1);
+        group2.appendChild(img);
+    }
+
+</script>
+
+
+
+<!-- Default Statcounter code for wan-animate
+https://humanaigc.github.io/wan-animate -->
+<script type="text/javascript">
+var sc_project=13167665; 
+var sc_invisible=1; 
+var sc_security="001465d9"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13167665/0/001465d9/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+
+</body>
+
+
+</html>
