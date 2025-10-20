@@ -22,5 +22,11 @@ In this paper, we propose MoCha, a novel framework that bypasses these limitatio
 Further, MoCha adopts a condition-aware RoPE to support multi-reference images and variable-length video generation.
 To overcome the data bottleneck, we construct a comprehensive data synthesis pipeline to collect qualified paired-training videos. Extensive experiments show that our method substantially outperforms existing state-of-the-art approaches.
 
+## Getting Started with MoCha
+Begin by cloning the repository:
+```shell
+git clone https://github.com/Tencent/HunyuanCustom.git
+cd MoCha
+```
 
 
