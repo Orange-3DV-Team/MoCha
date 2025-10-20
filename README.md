@@ -11,8 +11,8 @@
 </div>
 
 ## 🔥 Updates
-- __[2025.10.20]__: Release the [inference code](https://github.com/Orange-3DV-Team/MoCha-Code).
 - __[2025.10.20]__: Release the [project page](https://orange-3dv-team.github.io/MoCha).
+
 
 
 
