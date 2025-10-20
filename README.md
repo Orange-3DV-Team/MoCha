@@ -15,6 +15,12 @@
 
 
 
+## Abstract
+Controllable video character replacement with a user-provided one remains a challenging problem due to the lack of qualified paired-video data. 
+Prior works have predominantly adopted a reconstruction-based paradigm reliant on per-frame masks and explicit structural guidance (e.g., pose, depth). This reliance, however, renders them fragile in complex scenarios involving occlusions, rare poses, character-object interactions, or complex illumination, often resulting in visual artifacts and temporal discontinuities.
+In this paper, we propose MoCha, a novel framework that bypasses these limitations, which requires only a single first-frame mask and re-renders the character by unifying different conditions into a single token stream.
+Further, MoCha adopts a condition-aware RoPE to support multi-reference images and variable-length video generation.
+To overcome the data bottleneck, we construct a comprehensive data synthesis pipeline to collect qualified paired-training videos. Extensive experiments show that our method substantially outperforms existing state-of-the-art approaches.
 
 
 
