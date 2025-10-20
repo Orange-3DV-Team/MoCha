@@ -25,8 +25,20 @@ To overcome the data bottleneck, we construct a comprehensive data synthesis pip
 ## Getting Started with MoCha
 Begin by cloning the repository:
 ```shell
-git clone https://github.com/Tencent/HunyuanCustom.git
+git clone https://github.com/Orange-3DV-Team/MoCha.git
 cd MoCha
+```
+
+
+```shell
+# 1. Create conda environment
+conda create -n MoCha python==3.10
+
+# 2. Activate the environment
+conda activate MoCha
+
+# 3. Install pip dependencies
+pip install -r requirements.txt
 ```
 
 
