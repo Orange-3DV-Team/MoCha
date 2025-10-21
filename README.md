@@ -7,7 +7,7 @@
 <div align="center">
   <a href="https://github.com/Orange-3DV-Team/MoCha-Code"><img src="https://img.shields.io/static/v1?label=Code&message=Github&color=blue"></a> &ensp;
   <a href="https://orange-3dv-team.github.io/MoCha"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
-  <a href=""><img src="https://img.shields.io/static/v1?label=MoCha&message=HuggingFace&color=yellow"></a> &ensp;
+  <a href="https://huggingface.co/Orange-3DV-Team/MoCha"><img src="https://img.shields.io/static/v1?label=MoCha&message=HuggingFace&color=yellow"></a> &ensp;
 </div>
 
 
@@ -42,6 +42,7 @@ conda activate MoCha
 # 3. Install pip dependencies
 pip install -r requirements.txt
 ```
+
 
 
 
