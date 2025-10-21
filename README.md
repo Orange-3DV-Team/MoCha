@@ -9,7 +9,7 @@
   <a href="https://orange-3dv-team.github.io/MoCha"><img src="https://img.shields.io/static/v1?label=Project%20Page&message=Web&color=green"></a> &ensp;
   <a href="https://huggingface.co/Orange-3DV-Team/MoCha"><img src="https://img.shields.io/static/v1?label=MoCha&message=HuggingFace&color=yellow"></a> &ensp;
   <a href="https://github.com/kijai/ComfyUI-WanVideoWrapper/pull/1501"><img src="https://img.shields.io/static/v1?label=workflow&message=ComfyUI&color=purple"></a> &ensp;
-  <!-- <a href="https://github.com/user-attachments/assets/3544c61d-87ab-48ba-95bf-f9ec6fce3327"><img src=https://img.shields.io/badge/WeChat-07C160?label=Group&message=WeChat></a> &ensp; -->
+  <a href="https://imgchr.com/i/pVOdNRI"><img src=https://img.shields.io/badge/WeChat-07C160?label=Group&message=WeChat></a> &ensp;
 </div>
 
 https://github.com/user-attachments/assets/5fe4d80f-3aa4-4d45-8a29-a4d51f6d339d
@@ -104,6 +104,7 @@ Please leave us a star 🌟 and cite our repo if you find our work helpful.
   url={https://github.com/Orange-3DV-Team/MoCha}, 
 }
 ```
+
 
 
 
