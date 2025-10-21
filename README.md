@@ -10,7 +10,10 @@
   <a href="https://huggingface.co/Orange-3DV-Team/MoCha"><img src="https://img.shields.io/static/v1?label=MoCha&message=HuggingFace&color=yellow"></a> &ensp;
 </div>
 
-https://github.com/user-attachments/assets/00d23513-2d7e-4ebd-b922-420d90fdf340
+https://github.com/user-attachments/assets/5fe4d80f-3aa4-4d45-8a29-a4d51f6d339d
+
+https://github.com/user-attachments/assets/b9a5525f-cebf-4295-9738-7dd755daacf4
+
 
 
 
@@ -66,25 +69,37 @@ python inference_mocha.py
 
 ### Test your own video
 
-If you want to test your own videos, you need to prepare your test data following the structure of the ```example_test_data``` folder.
+To start your own character replacement with MoCha, the following three inputs are required:
 
+- Source Video: The original video with the character to be replaced.
+- Designation Mask for the First Frame: A mask marking the source character to be replaced in the first frame of Source Video.
+- Reference Images: Reference Images of the new character for replacement with clean background. We recommend uploading at least one high-quality, front-facing facial close-up.
 
-If you want to test your own videos, you need to prepare your test data following the structure of the ```example_test_data``` folder. This includes N mp4 videos, each with at least 81 frames, and a ```metadata.csv``` file that stores their paths and corresponding captions. You can refer to the [Prompt Extension section](https://github.com/Wan-Video/Wan2.1?tab=readme-ov-file#2-using-prompt-extension) in Wan2.1 for guidance on preparing video captions. 
+Then organize your test data following the structure of the ```./data/test_data.csv```.
+
+- ```source_video```: Path to Source Video.
+- ```source_mask```: Path to Designation Mask.
+- ```reference_1```: Path to first Reference Image.
+- ```reference_2```: Path to second Reference Image. This image needs to be a high-quality, front-facing facial close-up. (You can even zoom up your first reference image!) **If you really cannot provide this reference image, leave it as** ```None```.
+
+Finally, test your videos by:
 
 ```shell
-python inference_recammaster.py --cam_type 1 --dataset_path path/to/your/data
+python inference_mocha.py --data_path path/to/your/data.csv
 ```
 
 ## 🌟 Citation
 
 Please leave us a star 🌟 and cite our repo if you find our work helpful.
 ```
-@article{bai2025recammaster,
-  title={ReCamMaster: Camera-Controlled Generative Rendering from A Single Video},
-  author={Bai, Jianhong and Xia, Menghan and Fu, Xiao and Wang, Xintao and Mu, Lianrui and Cao, Jinwen and Liu, Zuozhu and Hu, Haoji and Bai, Xiang and Wan, Pengfei and others},
-  journal={arXiv preprint arXiv:2503.11647},
-  year={2025}
+@inproceedings{orange2025mocha,
+  title={MoCha: End-to-End Video Character Replacement without Structural Guidance}, 
+  author={Orange Team},
+  booktitle = {GitHub Repository},
+  year={2025},
+  url={https://github.com/Orange-3DV-Team/MoCha}, 
 }
 ```
+
 
 
