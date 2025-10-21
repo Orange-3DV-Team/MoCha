@@ -56,7 +56,7 @@ pip install -r requirements.txt
 ```
 
 Step 3: Download the pretrained checkpoints
-1. Download the pre-trained Wan2.1 models
+1. Download the pre-trained Wan2.1 models from [huggingface](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
 2. Download the pre-trained MoCha checkpoint
 
 Please download from [huggingface](https://huggingface.co/Orange-3DV-Team/MoCha) and place it in ```./checkpoints```.
@@ -74,6 +74,10 @@ To start your own character replacement with MoCha, the following three inputs a
 - Source Video: The original video with the character to be replaced.
 - Designation Mask for the First Frame: A mask marking the source character to be replaced in the first frame of Source Video.
 - Reference Images: Reference Images of the new character for replacement with clean background. We recommend uploading at least one high-quality, front-facing facial close-up.
+
+
+https://github.com/user-attachments/assets/3ae70cc1-9bf2-47ca-b6c2-bf7c84f0054f
+
 
 Then organize your test data following the structure of the ```./data/test_data.csv```.
 
@@ -100,6 +104,7 @@ Please leave us a star 🌟 and cite our repo if you find our work helpful.
   url={https://github.com/Orange-3DV-Team/MoCha}, 
 }
 ```
+
 
 
 
