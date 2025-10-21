@@ -90,7 +90,7 @@ Finally, test your videos by:
 ```shell
 python inference_mocha.py --data_path path/to/your/data.csv
 ```
-## 💭 Contact Us
+## 💭 Communication & Feedback
 
 Have more ideas? Welcome to scan the code and join the WeChat group for in-depth discussion!
 
@@ -111,6 +111,7 @@ Please leave us a star 🌟 and cite our repo if you find our work helpful.
   url={https://github.com/Orange-3DV-Team/MoCha}, 
 }
 ```
+
 
 
 
