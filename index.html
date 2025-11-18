@@ -73,8 +73,8 @@
                     More Research
                 </a>
                 <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        coming soon
+                    <a class="navbar-item" href="https://orange-3dv-team.github.io/MoCam">
+                        MoCam
                     </a>
 
                 </div>
@@ -108,7 +108,7 @@
                                     <span class="icon">
                                         <i class="ai ai-arxiv"></i>
                                     </span>
-                                    <span>Paper Coming Soon</span>
+                                    <span>Paper coming soon</span>
                                 </a>
                             </span>
                             <span class="link-block">
@@ -142,7 +142,7 @@
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div style="display: flex; justify-content: center; align-items: center;">
-                    <video controls muted autoplay loop><source src="content/long_video/video1.mp4" type="video/mp4"></video>
+                    <video controls muted autoplay loop><source src="content/long_video/video_real.mp4" type="video/mp4"></video>
             </div>
         </div>
         <div class="columns is-centered has-text-centered">
@@ -212,8 +212,7 @@
 
                 <div class="content has-text-justified">
                     <p style="font-size: 1.2em;">
-                        Controllable video character replacement with a user-provided one remains a challenging problem due to the lack of qualified paired-video data. Prior works have predominantly adopted a reconstruction-based paradigm reliant on per-frame masks and explicit structural guidance (e.g., pose, depth). This reliance, however, renders them fragile in complex scenarios involving occlusions, rare poses, character-object interactions, or complex illumination, often resulting in visual artifacts and temporal discontinuities.In this paper, we propose MoCha, a novel framework that bypasses these limitations, which requires only a single first-frame mask and re-renders the character by unifying different conditions into a single token stream.Further, MoCha adopts a condition-aware RoPE to support multi-reference images and variable-length video generation.To overcome the data bottleneck, we construct a comprehensive data synthesis pipeline to collect qualified paired-training videos. Extensive experiments show that our method substantially outperforms existing state-of-the-art approaches. </p></div>
-            </div>
+                        Controllable video character replacement with a user-provided one remains a challenging problem due to the lack of qualified paired-video data. Prior works have predominantly adopted a reconstruction-based paradigm reliant on per-frame masks and explicit structural guidance (e.g., pose, depth). This reliance, however, renders them fragile in complex scenarios involving occlusions, rare poses, character-object interactions, or complex illumination, often resulting in visual artifacts and temporal discontinuities. In this paper, we propose MoCha, a novel framework that bypasses these limitations, which requires only a single first-frame mask and re-renders the character by unifying different conditions into a single token stream. Further, MoCha adopts a condition-aware RoPE to support multi-reference images and variable-length video generation. To overcome the data bottleneck, we construct a comprehensive data synthesis pipeline to collect qualified paired-training videos. Extensive experiments show that our method substantially outperforms existing state-of-the-art approaches.</div>
         </div>
 
     </div>
@@ -363,44 +362,27 @@
                 }
             </style>
 
-            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-                <h3 class="title is-4"> Cartoon Character Replacement</h3>
-            </div>
-
-            <div class="content" style="text-align: center;">
-                    <p style="font-size: 1.3em;">
-                        MoCha generates high-fidelity videos when conditioned on cartoon character reference images.
-                    </p>
-            </div>
-
-            <div id="video-carousel-3" class="carousel unified-video-carousel">
-            <div class="item">
-              <video controls muted><source src="content/cartoon_replace/video1.mp4" type="video/mp4"></video>
-            </div>
-            <div class="item">
-              <video controls muted><source src="content/cartoon_replace/video2.mp4" type="video/mp4"></video>
-            </div>
-            <div class="item">
-              <video controls muted><source src="content/cartoon_replace/video3.mp4" type="video/mp4"></video>
-            </div>
-          </div>
             
 
-            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-                <h3 class="title is-4"> Real-Person Character Replacement</h3>
+          <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Occlusion and Multi-Character Interaction</h3>
             </div>
+
             <div class="content" style="text-align: center;">
                     <p style="font-size: 1.3em;">
-                        MoCha also performs well in replacing real-person characters in source videos.
+                        MoCha demonstrates robust performance by effectively handling complex multi-character occlusion and interaction scenarios. In addition, it can accurately replace the specified character, achieving high fidelity given only a single arbitrary frame mask.
                     </p>
             </div>
 
-            <div id="video-carousel-4" class="carousel unified-video-carousel">
+            <div id="video-carousel-5" class="carousel unified-video-carousel">
             <div class="item">
-              <video controls muted><source src="content/real_replace/video1.mp4" type="video/mp4"></video>
+              <video controls muted><source src="content/occlusion/video1.mp4" type="video/mp4"></video>
             </div>
             <div class="item">
-              <video controls muted><source src="content/real_replace/video2.mp4" type="video/mp4"></video>
+              <video controls muted><source src="content/occlusion/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/occlusion/video3.mp4" type="video/mp4"></video>
             </div>
           </div>
 
@@ -452,8 +434,53 @@
             </div>
           </div>
 
+          <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Cartoon Character Replacement</h3>
+            </div>
 
-            <br></br>
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        MoCha generates high-fidelity videos when conditioned on cartoon character reference images.
+                    </p>
+            </div>
+
+            <div id="video-carousel-3" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video1.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/cartoon_replace/video3.mp4" type="video/mp4"></video>
+            </div>
+          </div>
+            
+
+            <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+                <h3 class="title is-4"> Real-Person Character Replacement</h3>
+            </div>
+            <div class="content" style="text-align: center;">
+                    <p style="font-size: 1.3em;">
+                        MoCha also performs well in replacing real-person characters in source videos.
+                    </p>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center;">
+                    <video controls muted autoplay loop><source src="content/long_video/video1.mp4" type="video/mp4"></video>
+            </div>
+
+            <!-- <div id="video-carousel-4" class="carousel unified-video-carousel">
+            <div class="item">
+              <video controls muted><source src="content/real_replace/video4.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/real_replace/video2.mp4" type="video/mp4"></video>
+            </div>
+            <div class="item">
+              <video controls muted><source src="content/real_replace/video3.mp4" type="video/mp4"></video>
+            </div>
+          </div> -->
         </div>
     </div>
 </section>
@@ -465,7 +492,7 @@
                 <h2 class="title is-3">BibTeX</h2>
             </div>
         </div>
-        <div class="columns">
+        <!-- <div class="columns">
         <div class="column">
     <pre style="font-size: 1.2em;"><code>@misc{orange2025mocha,
   title={MoCha: End-to-End Video Character Replacement without Structural Guidance}, 
@@ -473,6 +500,18 @@
   year={2025},
   url={https://orange-3dv-team.github.io/MoCha}, 
 }</code></pre>
+            </div>
+        </div> -->
+        <div class="columns is-vcentered"> <div class="column is-four-fifths"> 
+                <pre style="font-size: 1.2em;"><code>@misc{orange2025mocha,
+ title={MoCha: End-to-End Video Character Replacement without Structural Guidance}, 
+ author={Orange Team},
+ year={2025},
+ url={https://orange-3dv-team.github.io/MoCha}, 
+}</code></pre>
+            </div>
+            <div class="column has-text-centered"> 
+                <img src="static/images/mocha.png" alt="MoCha Icon" style="max-width: 200px; height: auto; border-radius: 10px;">
             </div>
         </div>
     </div>
@@ -707,51 +746,22 @@
         navigation: true, 
         pagination: true 
     });
+    initializeCarouselWithVideoAutoplay('#video-carousel-5', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true, 
+        autoplaySpeed: 3000, 
+        navigation: true, 
+        pagination: true 
+    });
 
 
 </script>
 
-<script>
-    document.getElementById('gifImage3').src = 'content/gifs/Item.gif';
-    document.getElementById('gifImage1').src = 'content/gifs/s1.gif';
-    document.getElementById('gifImage2').src = 'content/gifs/s2.gif';
-
-    // 图片资源路径
-    const images = [
-        'content/teaser/t3.gif',
-        'content/teaser/t4.gif',
-        'content/teaser/t1.gif',
-        'content/teaser/t2.gif'
-    ];
-
-    // 获取要插入图片的div
-    const group1 = document.getElementById('group1');
-    const group2 = document.getElementById('group2');
-
-    // 创建并插入前两张图片
-    for (let i = 0; i < 2; i++) {
-        const img = document.createElement('img');
-        img.src = images[i];
-        img.loading = 'lazy';
-        img.alt = '图片' + (i + 1);
-        group1.appendChild(img);
-    }
-
-    // 创建并插入后两张图片
-    for (let i = 2; i < images.length; i++) {
-        const img = document.createElement('img');
-        img.src = images[i];
-        img.loading = 'lazy';
-        img.alt = '图片' + (i + 1);
-        group2.appendChild(img);
-    }
-
-</script>
 
 
 
-<!-- Default Statcounter code for wan-animate
-https://humanaigc.github.io/wan-animate -->
 <script type="text/javascript">
 var sc_project=13167665; 
 var sc_invisible=1; 
